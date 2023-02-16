@@ -20,7 +20,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('difuntos/', include('difuntos.urls'))
+    path('difuntos/', include('difuntos.urls')),
+    path('nacionalidades/', include('nacionalidades.urls')),
+    path('profesiones/', include('profesiones.urls')),
+    path('causasmuertes/', include('causasmuerte.urls')),
 ]
 
 if settings.DEBUG:
